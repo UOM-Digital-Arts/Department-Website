@@ -13,8 +13,8 @@ body {
 .container {
     background-color: rgba(0, 0, 0, 0.85);
     width: 70%;
-    margin: 10% auto 0;
-    padding: 100px;
+    margin: 8% auto 0;
+    padding: 90px 100px;
     border-radius: 5px;
 }
 
