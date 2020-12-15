@@ -1,0 +1,55 @@
+body {
+    background: url("resources/images/aboutus.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 100%;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 70%;
+    margin: 10% auto 0;
+    padding: 100px;
+    border-radius: 5px;
+}
+
+img {
+    width: 80%;
+    max-width: 350px;
+    color: white;
+}
+
+a,
+a:visited {
+    color: #CCC;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.links {
+    padding-top: 40px;
+
+}
+
+.links a {
+    text-decoration: none;
+}
+
+i {
+    color: #fff;
+    padding: 0 20px;
+}
+
+/* reduce padding on smaller devices */
+@media only screen and (max-width: 800px) {
+    .container {
+        padding: 5%;
+    }
+}
