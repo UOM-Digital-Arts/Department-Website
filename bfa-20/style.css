@@ -1,0 +1,254 @@
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .navbar.navbar-6 .navbar-toggler-icon {
+            background-image: url('https://mdbootstrap.com/img/svg/hamburger8.svg?color=154C5B');
+        }
+        
+        h1 {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 100pt;
+        }
+        
+        h2 {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h3 {
+            font-family: 'Abril Fatface', cursive;
+            font-size: 50pt;
+        }
+        
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 25pt;
+            font-weight: lighter;
+            color: black;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+        
+        h4:hover {
+            color: #63b5a3;
+            text-decoration-line: underline;
+            text-decoration: black;
+        }
+        
+        h5 {
+            letter-spacing: 2px;
+        }
+        
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            letter-spacing: 1pt;
+            font-weight: 300;
+        }
+        
+        hr {
+            border-top: 2px solid;
+        }
+        
+        .title {
+            padding-bottom: 50pt;
+            padding-top: 25pt;
+            text-align: end;
+        }
+        /* unvisited link */
+        
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+        /* visited link */
+        
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        /* mouse over link */
+        
+        a:hover {
+            color: #63b5a3;
+        }
+        /* selected link */
+        
+        a:active {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .logo-image {
+            width: 300px;
+            height: auto;
+            align-self: center;
+        }
+        
+        .container-2 {
+           
+            height: 500px;
+            overflow:hidden;
+            position: relative;
+        }
+        
+        .container-2 img{
+            width: 100%;
+            position: absolute;
+            top: -30%;
+            display:block;
+            }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .exhibition-img {
+            width: 100%;
+            height: 100%
+        }
+        
+        .biotext {
+            padding-bottom: 50pt;
+        }
+        
+        .gallery {
+            padding-top: 50pt;
+            padding-bottom: 100px;
+        }
+        
+        .piece_text {
+            padding: 5pt;
+        }
+
+        .mobile-bg-image{
+            display:none;
+        }
+        /* MOBILE SCREENS */
+        
+        @media screen and (max-width: 450px) {
+            .exhibition-img {
+                display: none;
+            }
+            .biotext {
+                padding-bottom: 0pt;
+            }
+            .gallery {
+                padding-top: 10pt;
+            }
+            .piece_text {
+                padding: 10px 5px;
+                display: flex;
+                flex-flow:column;
+                justify-content:center;
+                position:relative;
+                margin-bottom: 10px;
+    min-height: 130px;
+
+
+            }
+            .piece_text h6, .piece_text .title_of_piece {
+                z-index:1;
+        }
+        .mobile-bg-image{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+        }
+        .mobile-bg-image::before{
+            content:'';
+            width:100%;
+            height:100%;
+            background-color: rgba(255,255,255,0.7);
+            position: absolute;
+            top:0;
+            left:0;
+        }            
+        .col-6 {
+            flex: none;
+            max-width: none;
+            text-align: center;
+        }
+            
+        .logo-image {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .biotext {
+                padding-bottom: 0pt;
+            }
+            .gallery {
+                padding-top: 10pt;
+            }
+            .container-2 {
+                height: 300px;
+                position: relative;
+                text-align: center;
+                background-image: url('images/group_photo.png');
+                opacity: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: center;
+            }
+
+            .container-2 img{
+                display: none;
+
+            }
+            .logo-image {
+                display: none;
+            }
+            .sidebar {
+                padding-top: 15px;
+            }
+            .sidebar a {
+                font-size: 18px;
+            }
+            
+        }
+        
+        .footer-bottom {
+            padding: 0 0 60px 0;
+        }
+        
+        .footer-social a {
+            margin: 0 10px;
+            color: #bbb;
+            border: 0;
+        }
+        
+        .footer-social a:hover,
+        .footer-social a:focus {
+            color: #000000;
+            border: 0;
+        }
+        
+        .footer-social i {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+        
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        .sponsorsection{
+            padding-bottom: 50px;
+        }

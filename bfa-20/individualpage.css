@@ -1,0 +1,191 @@
+body {
+    background-image: linear-gradient(to bottom, white, white);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    letter-spacing: 0pt;
+}
+
+h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 20pt;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 20pt;
+    padding-bottom: 20pt;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25pt;
+    font-weight: lighter;
+    color: black;
+    letter-spacing: 3px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+/* Bob */
+
+@-webkit-keyframes hvr-bob {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes hvr-bob {
+    0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+    50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+    }
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+@-webkit-keyframes hvr-bob-float {
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes hvr-bob-float {
+    100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+}
+
+a img:hover {
+    color: white;
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+}
+
+.container-3 {
+    padding-top: 75pt;
+    padding-bottom: 100pt;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.project-info {
+    padding-right: 50pt;
+    padding-top: 50pt;
+    padding-left: 0px;
+}
+
+.profile_picture {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.main-image {
+    padding: 40px;
+}
+
+@media screen and (max-width: 450px) {}
+
+@media screen and (max-width: 768px) {
+    .project-info {
+        padding-right: 30pt;
+        padding-top: 20pt;
+        padding-left: 30pt;
+    }
+    .container-3 {
+        padding-top: 20pt;
+        padding-left: 0;
+        padding-right: 0
+    }
+    .main-image {
+        padding: 10px;
+        padding-top: 30px;
+    }
+}
+
+.img-sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    right: 0;
+    width: 75px;
+    height: 75px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to top, #ffffff, #dadada);
+    border-left: solid;
+    border-left-width: thin;
+    border-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-image: url(images/left_arrow.png);
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #154c5b
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 24px;
+    margin-left: 50px;
+    color: black;
+}
+
+.change_cursor {
+    cursor: zoom-in;
+}
