@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../css/hover-min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <link rel="stylesheet" href="../../photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="../../photoswipe/default-skin/default-skin.css">
+    <link rel="stylesheet" href="../../css/photoswipe-custom.css">
+    <title>Retrospect</title>
+</head>
+
+<body class="animate__animated animate__fadeIn animate__delay-1s">
+
+    <header class="border">
+        <div class="header__title border-bottom-s border-nobottom-l border-right-l header__title--yellow"><h1>Retrospect</h1></div>
+        <div class="header__subtitle"> UM BFA (Honours) Digital Arts</div>
+    </header>
+
+    <nav class="border border-notop-s border-notop-l border-noright-l">
+        <ul>
+            <li><a href="../../index.html" class="hvr-buzz-out">Home</a></li>
+            <li><a href="./index.html" class="hvr-buzz-out current-link">Projects</a></li>
+            <li><a href="../../class-of-21/index.html" class="hvr-buzz-out">Class of '21</a></li>
+            <li><a href="" class="hvr-buzz-out">Sponsors</a></li>
+            <li><a href="" class="hvr-buzz-out">BFA</a></li>
+        </ul>
+        <a id="logo" href="../../index.html"><img src="../..//logo.svg" alt=""></a>
+    </nav>
+
+    <main class="border border-notop-s border-notop-l">
+        <div class="main__info border-bottom-s">
+            <div class="profile">
+                <picture>
+                    <source srcset="../../img/portraits/shaniacamenzuli-portrait-1.webp" type="image/webp">
+                    <source srcset="../../img/portraits/shaniacamenzuli-portrait-1.jpg" type="image/jpeg">
+                    <img src="../../img/portraits/shaniacamenzuli-portrait-1.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="../../img/portraits/shaniacamenzuli-portrait-2.webp" type="image/webp">
+                    <source srcset="../../img/portraits/shaniacamenzuli-portrait-2.jpg" type="image/jpeg">
+                    <img src="../../img/portraits/shaniacamenzuli-portrait-2.jpg" alt="">
+                </picture>
+                <div class="profile__about">
+                    <h1 class="profile__name">Shania Camenzuli</h1>
+                    <a href="" class="profile__personal-website">shaniacamenzuli.com</a>
+                    <div class="profile__socials">
+                        <a href=""><img src="../../img/socials/instagram.svg" alt=""></a>
+                        <a href=""><img src="../../img/socials/linkedin.svg" alt=""></a>
+                        <a href=""><img src="../../img/socials/behance.svg" alt=""></a>
+                        <a href=""><img src="../../img/socials/youtube.svg" alt=""></a>
+                        <a href=""><img src="../../img/socials/facebook.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project border-bottom-s border-bottom-l">
+            <h2 class="project__title">Religious Iconography in Contemporary Art</h2>
+            <div class="project__tag">Photography</div>
+            <div class="project__bio">
+                <p>The project aims to push to the forefront specific social and environmental issues. The dramatic
+                    photographs act as a local critical commentary, hopefully raising more awareness.</p>
+            </div>
+        </div>
+        <div class="main__project-videos border-bottom-s border-bottom-l">
+            <div class="iframe__container"><iframe src="https://player.vimeo.com/video/451165366?title=0&byline=0&portrait=0" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script></div>
+            <div class="iframe__container"><iframe src="https://www.youtube.com/embed/BaLHthRsqQk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="main__project-images">
+            <picture onclick="photoSwipe(0)">
+                <source srcset="../../img/projects/shaniacamenzuli/Artboard 1.png" type="image/jpeg">
+                <img src="../../img/projects/shaniacamenzuli/Artboard 1.png" alt="">
+            </picture>
+            <picture onclick="photoSwipe(1)">
+                <source srcset="../../img/projects/shaniacamenzuli/shaniacamenzuli-project-2.png" type="image/jpeg">
+                <img src="../../img/projects/shaniacamenzuli/shaniacamenzuli-project-2.png" alt="">
+            </picture>
+            <picture onclick="photoSwipe(2)">
+                <source srcset="../../img/projects/shaniacamenzuli/shaniacamenzuli-project-3.png" type="image/jpeg">
+                <img src="../../img/projects/shaniacamenzuli/shaniacamenzuli-project-3.png" alt="">
+            </picture>
+        </div>
+    </main>
+
+    <footer class="border border-notop-s border-notop-l footer--right">
+        <a href="#top" class="a--footer">Back to top.</a>
+    </footer>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides. 
+        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle Fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom In/Out"></button>
+
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next"></button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="../../photoswipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="../../js/photoswipe-script.js"></script>
+
+    <script>
+        function photoSwipe(index) {
+
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+
+        // build items array
+        let items = [
+
+            {
+                src: '../../img/projects/shaniacamenzuli/shaniacamenzuli-project-1.png', // path to image
+                w: 1080, // image width
+                h: 1080, // image height
+            },
+
+            {
+                src: '../../img/projects/shaniacamenzuli/shaniacamenzuli-project-2.png', 
+                w: 1080,
+                h: 1080,
+            },
+
+            {
+                src: '../../img/projects/shaniacamenzuli/shaniacamenzuli-project-3.png', 
+                w: 1080,
+                h: 1080,
+            }
+        ];
+
+        // define options (if needed)
+        let options = {
+            index: index
+        };
+
+        // Initializes and opens PhotoSwipe
+        let gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+        }
+    </script>
+
+</body>
+
+</html>
