@@ -11,7 +11,7 @@ header {
 
 .header__title h1 {
     padding: var(--spacing);
-    font-family: 'Gopher-Bold';
+    font-family: 'gopher';
     text-transform: uppercase;
     font-size: 1.728rem;
     margin: 0;
@@ -21,8 +21,10 @@ header {
 .header__subtitle {
     padding: var(--spacing);
     font-size: 0.833rem;
-    font-family: 'Gopher-Bold';
+    font-family: 'gopher';
+    font-weight: 400;
     width: 100%;
+    padding: 2%
 }
 
 nav {
@@ -30,7 +32,7 @@ nav {
 }
 
 nav > ul {
-    font-family: 'Gopher-Bold';
+    font-family: 'gopher';
     padding: 0;
     margin: 0;
     display: flex;
@@ -57,7 +59,7 @@ nav > ul > li {
 
     .header__title {
         flex: 0 0 300px;
-        background-color: black;
+        background-color: white;
     }
 
     .header__title--primary {

@@ -1,34 +1,26 @@
 /**************** Variables ****************/
 
 :root {
-    --primary: #4CAF7F;
-    --secondary: #FFC907;
-    --pink: #F48FA4;
-    --blue: #506EB5;
-    --yellow: #FFC907;
-    --red: #D62936;
-    --link: #4CAF7F;
+    --primary: #98ada3;
+    --secondary: #fff3c7;
+    --pink: #e9d9dc;
+    --blue: #8d8d8d;
+    --yellow: #d8d6d0;
+    --red: #a89a9b;
+    --link: #9faaa5;
 
     --spacing: 1.2rem;
 
-    --bw: 3px;
-    --bw-l: 4px;
+    --bw: 1px;
+    --bw-l: 1px;
 
     --animate-delay:0.25s
 }
 
 @media only screen and (min-width: 768px) {
     :root {
-        --spacing: 1.728rem;
+        --spacing: 0rem;
     }
-}
-
-@font-face {
-    font-family: Gopher-Bold;
-    src: url(./../fonts/Gopher-Bold.ttf) format("ttf"),
-         url(./../fonts/Gopher-Bold.woff) format("woff"),
-         url(./../fonts/Gopher-Bold.woff2) format("woff2");
-    font-weight: bold;
 }
 
 *,
@@ -141,7 +133,7 @@ body {
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: rem;
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -159,7 +151,8 @@ ul, li {
 }
 
 a {
-    font-family: 'Gopher-Bold';
+    font-family: 'gopher';
+    font-weight: 200;
 }
 
 a, a:visited {
@@ -191,7 +184,7 @@ footer {
     padding: var(--spacing);
     font-size: 0.833rem;
     color: var(--red);
-    font-family: 'Gopher-Bold';
+    font-family: 'gopher';
 }
 
 .footer--right {
