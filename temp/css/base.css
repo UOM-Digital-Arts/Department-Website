@@ -12,7 +12,7 @@
     --spacing: 1.2rem;
 
     --bw: 1px;
-    --bw-l: 1px;
+    --bw-l: 0.5px;
 
     --animate-delay:0.25s
 }
@@ -51,7 +51,7 @@ body {
     margin: 0;
     padding: var(--spacing);
     background-color: white;
-    font-family: Montserrat;
+    font-family: franklin-gothic-urw, sans-serif;
     font-weight: 500;
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5 {
 
 ul, li {
     margin: 0;
-    padding: 0;
+    padding: 10%;
 }
 
 a {
@@ -216,4 +216,3 @@ a.a--footer {
         grid-area: footer;
     }
 }
-

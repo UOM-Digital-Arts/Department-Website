@@ -1,0 +1,138 @@
+.project-title {
+
+       /* Gopher Bold */
+
+       font-family: gopher, sans-serif;
+       font-weight: 700;
+       font-style: normal;
+
+}
+
+.project-title--italic {
+
+    /* Gopher Bold Italic */
+
+    font-family: gopher, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+
+
+main {
+    margin: 0;
+    padding: 0;
+    padding: var(--spacing);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin-bottom: var(--spacing);
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+a.project {
+    display: block;
+}
+
+.project-img img {
+    width: 100%;
+    height: 170px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-color: black;
+}
+
+.project-title {
+    font-size: clamp(0.833rem, 0.7571rem + 0.3239vw, 1rem);
+    padding: var(--spacing);
+}
+
+.project-tag {
+    font-size: clamp(0.694rem, 0.6308rem + 0.2696vw, 0.833rem);
+    padding: var(--spacing) 0 0 var(--spacing);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.project-student {
+    font-size: clamp(0.694rem, 0.6308rem + 0.2696vw, 0.833rem);
+    margin-top: 0.233rem;
+    font-weight: bold;
+    padding: 0 0 var(--spacing) var(--spacing);
+}
+
+@media only screen and (min-width: 456px) and (max-width: 767px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--spacing);
+    }
+
+    .project {
+        margin-bottom: 0
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .project-img {
+        height: 240px;
+    }
+
+    .project {
+        margin-bottom: var(--spacing);
+    }
+    
+}
+
+@media only screen and (min-width: 1116px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--spacing);
+    }
+
+    .project {
+        margin-bottom: 0; /* Handled by grid-gap. */
+    }
+
+    .project-img img {
+        height: 368px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+.pswp__top-bar, .pswp__button--arrow--left:before, .pswp__button--arrow--right:before, .pswp__share-modal, .pswp__top-bar, .pswp__caption, .pswp__ui--fit .pswp__top-bar, .pswp__ui--fit .pswp__caption {
+    background-color: black;
+}
+
+.pswp__share--toltip {
+    -webkit-box-shadow: black;
+          box-shadow: black;
+}
+
+.pswp__caption, .pswp__caption__center {
+    color: white;
+}
+
+.pswp__button, .pswp__counter, .pswp--css_animation .pswp__preloader__icn {
+    opacity: 1;
+}
+
+.pswp__counter {
+        
+    /* Gopher Bold */
+    
+    font-family: gopher, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.pswp__img--placeholder--blank {
+    background-color: black;
+}
+
+.pswp--animate_opacity, .pswp__bg {
+    -webkit-transition: none;
+            transition: none; }

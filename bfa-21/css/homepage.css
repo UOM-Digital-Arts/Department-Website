@@ -1,0 +1,107 @@
+.headline p {
+
+    /* Gopher Bold */
+
+    font-family: gopher, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    background-color: var(--primary);
+}
+
+.headline p {
+    padding: var(--spacing);
+    font-size: clamp(0.833rem, 0.2689rem + 2.4068vw, 2.074rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+
+.major-link {
+    flex-grow: 1;
+    padding: var(--spacing);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.major-link > a {
+    color: var(--primary);
+    font-size: clamp(2.488rem, 1.9903rem + 2.1236vw, 3.583rem);
+    text-transform: uppercase;
+    
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+    .box {
+        display: block;
+    }
+
+    .headline {
+        display: grid;
+        place-items: center;
+    }
+
+    .headline {
+        border-left: var(--bw-l) solid black;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    main {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

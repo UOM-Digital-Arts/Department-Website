@@ -26,8 +26,10 @@ a.project {
 .project-img img {
     height: 100%;
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    padding: 5%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    
 }
 
 .project-info {
@@ -37,9 +39,11 @@ a.project {
 }
 
 .project-title {
-    font-family: 'Gopher-Bold';
+    font-family: 'gopher';
+    font-weight: 200;
+    text-align: center;
     font-size: clamp(0.833rem, 0.7571rem + 0.3239vw, 1rem);
-    padding: var(--spacing);
+    padding: 4%;
 }
 
 .project-tag {
@@ -48,11 +52,16 @@ a.project {
 }
 
 .project-student {
-    font-family: 'Gopher-Bold';
-    font-size: clamp(0.694rem, 0.6308rem + 0.2696vw, 0.833rem);
     margin-top: 0.233rem;
-    font-weight: bold;
-    padding: 0 0 var(--spacing) var(--spacing);
+    padding: 5%;
+    font-size: 17pt;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
+    display: flex;
+    color: black; 
+
 }
 
 @media only screen and (min-width: 456px) and (max-width: 767px) {
