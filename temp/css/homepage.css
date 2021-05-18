@@ -80,11 +80,9 @@ main {
 }
 
 
-
-
-
-
-
+#canvas{
+    height: 100% !important;
+}
 
 
 

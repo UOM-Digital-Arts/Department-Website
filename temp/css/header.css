@@ -115,8 +115,8 @@ nav > ul > li {
     }
 
     #logo img {
-        height: 100px;
-        width: 100px;
+        height: auto;
+        width: 200px;
     }
 
     nav > ul > li:last-child {

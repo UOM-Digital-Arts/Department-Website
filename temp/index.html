@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="https://use.typekit.net/uwi7mxq.css">
-    <title>Retrospect</title>
+    <title>Digital Arts UM</title>
 </head>
 <body class="animate__animated animate__fadeIn animate__delay-1s">
 
@@ -20,13 +20,13 @@
 
     <nav class="border border-notop-s border-notop-l border-noright-l">
         <ul>
-            <li><a href="./index.html" class="hvr-buzz-out current-link">Home</a></li>
-            <li><a onmouseover="shake(this)" href="./projects/index.html" class="hvr-buzz-out">BFA</a></li>
-            <li><a href="./class-of-21/index.html" class="hvr-buzz-out">MFA</a></li>
-            <li><a href="" class="hvr-buzz-out">Research</a></li>
-            <li><a href="" class="hvr-buzz-out">People</a></li>
+            <li><a href="index.html" class="hvr-buzz-out current-link">Home</a></li>
+            <li><a onmouseover="shake(this)" href="bfa.html" class="hvr-buzz-out">BFA</a></li>
+            <li><a href="mfa.html" class="hvr-buzz-out">MFA</a></li>
+            <li><a href="research.html" class="hvr-buzz-out">Research</a></li>
+            <li><a href="people.html" class="hvr-buzz-out">People</a></li>
         </ul>
-       
+        <a id="logo" href="https://www.um.edu.mt/maks" target="_blank"><img src="UMLOGO_black.png" alt=""></a>
     </nav>
 
     <main class="border border-notop-s border-notop-l">
@@ -46,11 +46,14 @@
         </p>
             </div>
         <div class="box border border-notop-l border-noleft-l border-nobottom-l border-noright-l">
-            <img class="banner-image-05" src="img/home/banner-image-05.png">
+          
+                <canvas id="canvas" style="width: 100%;"></canvas>
+
+           <!-- <img class="banner-image-05" src="img/home/banner-image-05.png">-->
         </div>
     </main>
 
-  
+    <script type="module" src="js/3d_model_1.js"></script>
 
 </body>
 </html>

@@ -1,50 +1,3 @@
-.filter {
-    display: flex;
-    align-items: center;
-    border: none;
-    outline: none;
-}
-
-.filter > input {
-    width: 100%;
-    padding: var(--spacing);
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: clamp(0.579rem, 0.4635rem + 0.4926vw, 0.833rem);
-    outline: none;
-    border: none;
-}
-
-.filter > textarea:focus, .filter > input:focus {
-    outline: none;
-}
-
-.filter > ::-webkit-input-placeholder {
-    color: black;
-    opacity: 1;
-}
-
-.filter > ::-moz-placeholder {
-    color: black;
-    opacity: 1;
-}
-
-.filter > :-ms-input-placeholder {
-    color: black;
-    opacity: 1;
-}
-
-.filter > ::-ms-input-placeholder {
-    color: black;
-    opacity: 1;
-}
-
-.filter > ::placeholder {
-    color: black;
-    opacity: 1;
-}
-
 .class {
     padding: var(--spacing);
     display: flex;
@@ -57,6 +10,12 @@
     position: relative;
     height: min-content;
     margin-bottom: var(--spacing);
+    padding: 4%;
+    filter:grayscale(100);
+}
+
+.class__student:hover {
+   filter:none;
 }
 
 .class__student:last-child {
@@ -66,7 +25,10 @@
 .class__student > picture, .class__student > picture > img {
     width: 100px;
     height: 100px;
+    object-fit: cover;
 }
+
+
 
 .class__student > picture:nth-child(2) {
     position: absolute;
@@ -107,34 +69,23 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: var(--spacing)
+    margin-left: var(--spacing);
+    padding: 2%;
 }
 
 .class__student__info__name {
-    font-family: 'Gopher-Bold';
-    font-weight: bold;
-    font-size: clamp(0.833rem, 0.7571rem + 0.3239vw, 1rem);
+    font-family: 'gopher';
+    font-weight: 200;
+    font-size: 15pt;
     margin-bottom: 0.482rem;
     padding-right: 1rem;
 }
 
 .class__student__info__tag {
     font-size: clamp(0.694rem, 0.6308rem + 0.2696vw, 0.833rem);
-    font-family: 'Montserrat', sans-serif;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 300;
     padding-right: 0.402rem;
-}
-
-main > form {
-    flex-shrink: 0;
-    height: 30px;
-}
-
-main > ul {
-    flex-grow: 1;
-}
-
-main > ul > a {
-    font-size: 0.833rem;
 }
 
 @media only screen and (min-width: 1200px) {
