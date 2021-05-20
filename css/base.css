@@ -11,7 +11,7 @@
 
     --spacing: 1.2rem;
 
-    --bw: 1px;
+    --bw: 0.5px;
     --bw-l: 0.5px;
 
     --animate-delay:0.25s
@@ -130,6 +130,8 @@ body {
     .border-noleft-l {
         border-left-width: 0;
     }
+
+    
 }
 
 p {
@@ -214,6 +216,23 @@ a.a--footer {
 
     footer {
         grid-area: footer;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 1%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    ul, li {
+        margin: 0;
+        padding: 1%;
+    }
+
+    a{
+        font-size: 15px;
     }
 }
 

@@ -141,3 +141,35 @@ h2 {
     align-content: center;
     padding: 4%;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .headline {
+        background-color: white;
+        padding: 1%;
+        border-color: white;
+    }
+
+    .headline p {
+        padding: 2%;
+        font-size: 17px;
+        font-family: franklin-gothic-urw, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 1.5;
+        display: flex;
+        color: black; 
+        text-align:justify;
+    }
+
+    h2{
+        font-size: 15px;
+        text-align: justify;
+        padding: 5%;
+    }
+
+    .class{
+        padding: 0;
+    }
+
+}
