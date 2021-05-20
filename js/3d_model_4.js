@@ -49,7 +49,7 @@ function init() {
   loader.load('DGA3010-Nina_Hess-Cavewoman.glb', function (gltf) {
     model = gltf.scene;
     gltf.scene.scale.set(25, 25, 25);
-    gltf.scene.position.y = 0;
+    gltf.scene.position.y = -10;
     gltf.scene.position.x = 0;
     scene.add(gltf.scene);
     animate();
