@@ -22,13 +22,13 @@ init();
 render();
 
 function init() {
-  var myContainerElement = document.getElementById("container");
+  var myContainerElement = document.getElementById("cavem");
   renderer = new THREE.WebGLRenderer({
-    canvas: canvas,
+    canvas: cavem,
     antialias: true,
   });
-  canvas.width = canvas.clientWidth;
-  canvas.height = canvas.clientHeight;
+  cavem.width = canvas.clientWidth;
+  cavem.height = canvas.clientHeight;
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(canvas.clientWidth, canvas.clientHeight);
   renderer.toneMapping = THREE.ReinhardToneMapping;
@@ -48,9 +48,9 @@ function init() {
   loader.setMeshoptDecoder(_meshopt_decoderModule.MeshoptDecoder);
   loader.load('DGA3010-Samuel_Agius-CaveMan.glb', function (gltf) {
     model = gltf.scene;
-    gltf.scene.scale.set(50, 50, 50);
+    gltf.scene.scale.set(25, 25, 25);
     gltf.scene.position.y = 0;
-    gltf.scene.position.x = -40;
+    gltf.scene.position.x = 0;
     scene.add(gltf.scene);
     animate();
     render();

@@ -22,7 +22,7 @@ init();
 render();
 
 function init() {
-  var myContainerElement = document.getElementById("container");
+  var myContainerElement = document.getElementById("heli");
   renderer = new THREE.WebGLRenderer({
     canvas: heli,
     antialias: true,
@@ -49,7 +49,7 @@ function init() {
   loader.load('DGA2013-Samwel_Borg-Helicopter_01.11.glb', function (gltf) {
     model = gltf.scene;
     gltf.scene.scale.set(5, 5, 5);
-    gltf.scene.position.y = 0;
+    gltf.scene.position.y = 20;
     gltf.scene.position.x = 0;
     scene.add(gltf.scene);
     animate();

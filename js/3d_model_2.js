@@ -22,7 +22,7 @@ init();
 render();
 
 function init() {
-  var myContainerElement = document.getElementById("container");
+  var myContainerElement = document.getElementById("canvas");
   renderer = new THREE.WebGLRenderer({
     canvas: canvas,
     antialias: true,

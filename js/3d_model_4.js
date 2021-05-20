@@ -22,13 +22,13 @@ init();
 render();
 
 function init() {
-  var myContainerElement = document.getElementById("container");
+  var myContainerElement = document.getElementById("cavew");
   renderer = new THREE.WebGLRenderer({
-    canvas: canvas,
+    canvas: cavew,
     antialias: true,
   });
-  canvas.width = canvas.clientWidth;
-  canvas.height = canvas.clientHeight;
+  cavew.width = canvas.clientWidth;
+  cavew.height = canvas.clientHeight;
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(canvas.clientWidth, canvas.clientHeight);
   renderer.toneMapping = THREE.ReinhardToneMapping;
@@ -46,11 +46,11 @@ function init() {
   const loader = new _GLTFLoader.GLTFLoader().setPath('../img/3d/');
   loader.setKTX2Loader(ktx2Loader);
   loader.setMeshoptDecoder(_meshopt_decoderModule.MeshoptDecoder);
-  loader.load('DGA2013-Samwel_Borg-Helicopter_01.11.glb', function (gltf) {
+  loader.load('DGA3010-Nina_Hess-Cavewoman.glb', function (gltf) {
     model = gltf.scene;
-    gltf.scene.scale.set(50, 50, 50);
+    gltf.scene.scale.set(25, 25, 25);
     gltf.scene.position.y = 0;
-    gltf.scene.position.x = -40;
+    gltf.scene.position.x = 0;
     scene.add(gltf.scene);
     animate();
     render();

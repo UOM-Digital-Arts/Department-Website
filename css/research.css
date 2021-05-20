@@ -151,7 +151,18 @@ body .button {
     color: #79e3b6;
   }
 
+  #canvas{
+    height: 100% !important;
+}
 
+#heli{
+    height: 100% !important;
+}
+
+#cavew{
+    height: 100% !important;
+    object-fit: contain;
+}
 
 
 
