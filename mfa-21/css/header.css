@@ -1,0 +1,122 @@
+.box {
+    display: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.header__title h1 {
+    padding: var(--spacing);
+    font-family: 'Gopher-Bold';
+    text-transform: uppercase;
+    font-size: 1.728rem;
+    margin: 0;
+    color: black;
+}
+
+.header__subtitle {
+    padding: var(--spacing);
+    font-size: 0.833rem;
+    font-family: 'Gopher-Bold';
+    width: 100%;
+}
+
+nav {
+    padding: var(--spacing);
+}
+
+nav > ul {
+    font-family: 'Gopher-Bold';
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    font-size: clamp(0.579rem, 0.2967rem + 1.2044vw, 1.2rem);
+    margin-right: 0.539rem;
+}
+
+#logo {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        grid-area: header;
+    }
+
+    .header__title {
+        flex: 0 0 300px;
+        background-color: black;
+    }
+
+    .header__title--primary {
+        background-color: var(--primary);
+    }
+
+    .header__title--pink {
+        background-color: var(--pink);
+    }
+
+    .header__title--yellow {
+        background-color: var(--yellow);
+    }
+
+    .header__title--blue {
+        background-color: var(--blue);
+    }
+
+    .header__title h1{
+        display: none;
+    }
+
+    nav {
+        grid-area: nav;
+        grid-column: 1 / 2;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: var(--spacing);
+    }
+
+    nav > ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav > ul > li:first-child {
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+    nav > ul > li {
+        margin-bottom: 1rem;
+    }
+    
+    #logo {
+        margin-top: 10rem;
+        display: block;
+        align-items: flex-start;
+    }
+
+    #logo img {
+        height: 100px;
+        width: 100px;
+    }
+
+    nav > ul > li:last-child {
+        margin-bottom: 0;
+    }
+}
