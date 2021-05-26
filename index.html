@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0c19982956.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>UOM: Department of Digital Arts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/hover-min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uwi7mxq.css">
+    <title>Digital Arts UM</title>
 </head>
+<body class="animate__animated animate__fadeIn animate__delay-1s">
 
-<body>
-    <div class="container">
-        <img src="resources/images/logo.svg" alt="University of Malta Logo">
+    <header class="border">
+        <div class="header__subtitle"> MaKS, Digital Arts UM</div>
+    </header>
 
-        <h1>UOM Digital Arts Website - Coming Soon</h1>
-        <p>Welcome to the website of the department of Digital Arts, within the University of Malta. We are working on
-            our new website, in the meantime, please check out our <a href="https://digiarts.edu.mt/bfa-21">BFA exhibition</a>, 
-            <a href="https://www.ennead.online/">MFA exhibition</a>, and other page within <a
-                href="https://www.um.edu.mt/maks/digitalarts">University of Malta's
-                Website</a></p>
+    <nav class="border border-notop-s border-notop-l border-noright-l">
+        <ul>
+            <li><a href="index.html" class="hvr-buzz-out current-link">Home</a></li>
+            <li><a onmouseover="shake(this)" href="bfa.html" class="hvr-buzz-out">BFA</a></li>
+            <li><a href="mfa.html" class="hvr-buzz-out">MFA</a></li>
+            <li><a href="research.html" class="hvr-buzz-out">Research</a></li>
+            <li><a href="people.html" class="hvr-buzz-out">People</a></li>
+        </ul>
+        <a id="logo" href="https://www.um.edu.mt/maks" target="_blank"><img src="UMLOGO_black.png" alt=""></a>
+    </nav>
 
-        <div class="links">
-            <a href="https://www.facebook.com/um.maksfaculty" target="_blank">
-                <i class="fab fa-facebook-square fa-lg"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=qOBaymED0B8&ab_channel=UniversityofMalta" target="_blank">
-                <i class="fab fa-youtube fa-lg"></i>
-            </a>
-            <a href="https://www.instagram.com/ummalta/?hl=en" target="_blank">
-                <i class="fab fa-instagram fa-lg"></i>
-            </a>
+    <main class="border border-notop-s border-notop-l">
+        <div class="headline box border border-notop-l border-noleft-l">
+            <p>The Department of Digital Arts, at the Faculty of Media and Knowledge Sciences (MAKS), bridges contemporary artistic practice with electronic and digital technologies. Through our BFA, MFA and Ph.D programs, research at the Department considers the realities of current art and design practices that foster interdisciplinarity through the use of a diversity of media, ranging from the traditional, through to the most recent digital technologies.  Its students are led to initiate, broaden and sustain a refined, critical and unique voice through developing a practice founded on informed experimentation, where value is given to contextual historical and theoretical frameworks, contemporary conceptualization and aesthetic articulation, and sound technical accomplishment. 
+            </p>
         </div>
-    </div>
-</body>
+        <div class="empty-box border-bottom-s border-bottom-l">
+        </div>
+        <div class="headline border-right-l"><p>Department of Digital Arts<br>
+            Faculty of Media & Knowledge Sciences<br>
+            University of Malta<br>
+            Msida MSD 2080<br>
+            Malta<br>
+            da.maks@um.edu.mt<br>
+            +356 2340 3746
+        </p>
+            </div>
+        <div class="box border border-notop-l border-noleft-l border-nobottom-l border-noright-l">
+          
+                <canvas id="canvas" style="width: 100%;"></canvas>
 
+           <!-- <img class="banner-image-05" src="img/home/banner-image-05.png">-->
+        </div>
+    </main>
+
+    <script type="module" src="js/3d_model_1.js"></script>
+
+</body>
 </html>
