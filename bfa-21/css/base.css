@@ -32,8 +32,8 @@ a, footer {
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
