@@ -1,0 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+.btn,
+a {
+    font-family: "Poppins";
+}
+
+h2 {
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+.red {
+    color: #EC5628;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+
+/* Dividers */
+
+.border-bottom {
+    border-style: solid;
+    border-color: #000000!important;
+    border-width: 0px 0px 1px 0px;
+}
+
+.footer {
+    background-color: #000000;
+}
+
+.large-block {
+    padding: 100px 20px;
+}
