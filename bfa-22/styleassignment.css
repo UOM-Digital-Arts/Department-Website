@@ -43,7 +43,7 @@ body {
 
 /*#region Navbar*/
 .navbar {
-  background: rgb(253, 247, 233);
+  background: #ffffff;
   height: 120px;
 }
 
@@ -95,7 +95,7 @@ body {
 #navbarText {
   position: relative;
   z-index: 1;
-  background-color: rgb(253, 247, 233);
+  background-color: #ffffff;
 }
 /*#endregion Navbar*/
 
@@ -141,7 +141,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.9vmin;
-  color: rgb(253, 247, 233);
+  color: #ffffff;
   padding-left: 15px;
   /*padding-top: 6vw;*/
   margin-bottom: 0vw;
@@ -183,7 +183,7 @@ body {
 
 .card {
   border: 0rem;
-  background-color: rgb(253, 247, 233);
+  background-color: #ffffff;
   align-items: center;
 }
 
@@ -196,6 +196,7 @@ body {
 .card-img-top:hover {
   opacity: 60%;
 }
+
 .card:hover {
   transform: scale(1.01);
   z-index: 999;
@@ -259,12 +260,32 @@ body {
   margin-bottom: 0px;
 }
 
-.student-image {
+.student-image-1 {
   width: 38vmin;
   height: 53vmin;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: -1vw 1vw 0vw 0vw black;
+  box-shadow: -1vw 1vw 0vw 0vw #7844cc;
+  margin: auto;
+  margin-right: 10vmin;
+}
+
+.student-image-2 {
+  width: 38vmin;
+  height: 53vmin;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: -1vw 1vw 0vw 0vw #db0dd6;
+  margin: auto;
+  margin-right: 10vmin;
+}
+
+.student-image-3 {
+  width: 38vmin;
+  height: 53vmin;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: -1vw 1vw 0vw 0vw #32e1c4;
   margin: auto;
   margin-right: 10vmin;
 }
