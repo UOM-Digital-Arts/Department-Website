@@ -45,6 +45,7 @@ body {
 .navbar {
   background: rgb(253, 247, 233);
   height: 120px;
+  position: sticky;
 }
 
 .navbar-brand {
