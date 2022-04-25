@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: rgb(253, 247, 233);
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -45,7 +45,6 @@ body {
 .navbar {
   background: rgb(253, 247, 233);
   height: 120px;
-  position: sticky;
 }
 
 .navbar-brand {
@@ -158,12 +157,28 @@ body {
 /*#endregion Home Page*/
 
 /*#region Cards*/
-.card-img-top {
+.card-img-top-1 {
   width: 26vw;
   height: 38vw;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: -1vw 1vw 0vw 0vw black;
+  box-shadow: -1vw 1vw 0vw 0vw #7844cc;
+}
+
+.card-img-top-2 {
+  width: 26vw;
+  height: 38vw;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: -1vw 1vw 0vw 0vw #db0dd6;
+}
+
+.card-img-top-3 {
+  width: 26vw;
+  height: 38vw;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: -1vw 1vw 0vw 0vw #32e1c4;
 }
 
 .card {
