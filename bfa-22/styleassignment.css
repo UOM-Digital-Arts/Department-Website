@@ -1,7 +1,6 @@
 html,
 body {
   background-color: #E5e7e6;
-  overflow-x: hidden;
 }
 
 /*#region Socials*/
@@ -31,10 +30,11 @@ body {
 
 .fab.fa-facebook-f.fa-2x,
 .fab.fa-instagram.fa-2x, 
-.fa-brands.fa-behance{
+.fab.fa-behance.fa-2x,
+.fab.fa-solid.fa-book.fa-2x,
+.fab.fa-solid.fa-globe.fa-2x{
   font-size: 2.1vh;
 }
-
 /*#endregion Socials*/
 
 .brlarge {
@@ -45,7 +45,7 @@ body {
 /*#region Navbar*/
 .navbar {
   background: #E5e7e6;
-  height: 120px;
+  height: 80px;
 }
 
 .navbar-brand {

@@ -25,7 +25,6 @@
     <link rel="manifest" href="favicon_io/site.webmanifest" />
 
     <!-- Bootstrap CSS -->
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -80,7 +79,10 @@
         <div class="collapse navbar-collapse mr-auto" id="navbarText">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="Coming_soon.html"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="Exhibition.html"
                 >Exhibition</a
               >
             </li>
@@ -88,12 +90,12 @@
               <a class="nav-link" href="Students.html">Students</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="Sponsors.html">Sponsors</a>
+              <a class="nav-link" href="Sponsors.html">Sponsors</a>
             </li>
           </ul>
         </div>
 
-        <div class="d-flex justify-content-md-end">
+        <div class="d justify-content-md-end">
           <a
             class="btn btn-dark shadow-none"
             href="https://issuu.com/chalisebugeja/docs/finalcatalogue"
@@ -113,32 +115,78 @@
       ></a>
     </div>
 
-    <div class="container">
-      <div class="row row-custom row-cols-2 row-cols-lg-3 g-1">
-        <div class="col col-custom">
-          <img src="sponsor_logos/TFT-logos.png" class="logos" alt="" />
+    <!--Image Carousel-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-item active">
+          <img src="img-carousel/car-1.jpg" class="d-block w-100" alt="..." />
         </div>
-        <div class="col col-custom">
-          <img src="sponsor_logos/SK-logo.png" class="logos" alt="" />
+        <div class="carousel-item">
+          <img src="img-carousel/car-2.jpg" class="d-block w-100" alt="..." />
         </div>
-        <div class="col col-custom">
-          <img src="sponsor_logos/ARTZID-Logo.png" class="logos" alt="" />
-        </div>
-        <div class="col col-custom">
-          <img src="sponsor_logos/Bloom-Logo.png" class="logos" alt="" />
-        </div>
-        <div class="col col-custom">
-          <img src="sponsor_logos/VC-LOGO.png" class="logos" alt="" />
-        </div>
-        <div class="col col-custom">
-          <img
-            src="sponsor_logos/LogixCreative-LOGO.png"
-            class="logos"
-            alt=""
-          />
+        <div class="carousel-item">
+          <img src="img-carousel/car-3.jpg" class="d-block w-100" alt="..." />
         </div>
       </div>
     </div>
+
+    <br />
+    <hr class="hr-main" />
+    <br />
+
+    <!--Footer-->
+    <div class="container-fluid px-0 pt-4">
+      <div class="row">
+        <div class="col-1 col-md-1"></div>
+
+        <div class="col-10 col-md-10">
+          <h5 class="student-name">EXHIBITION 2022</h5>
+          <br />
+          <p class="body-text px-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            faucibus felis lorem, id rutrum leo consequat vel. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Morbi auctor odio vitae semper maximus. Nulla
+            sollicitudin leo eget sem aliquet, dapibus rhoncus purus rhoncus.
+            Pellentesque sed tincidunt elit. Proin dapibus tempus velit, non
+            molestie ex interdum at.Sed sollicitudin ornare quam sit amet
+            finibus. Donec consectetur massa eu ornare tristique.Sed a molestie
+            sapien. Nam semper ultrices suscipit. Etiam fringilla aliquet
+            cursus. Aliquam dictum ante leo, et rhoncus dolor convallis posuere.
+            Nullam pharetra tincidunt elit commodo euismod. In non est molestie
+            nibh iaculis euismod quis sit amet mi. Vestibulum euismod neque
+            lorem, non ornare mi eleifend nec. Donec hendrerit nunc vitae
+            pharetra sollicitudin. Integer nec commodo massa. Nam tincidunt
+            vestibulum metus, in ultricies libero gravida vitae. Quisque
+            consectetur magna nec est luctus, sit amet rutrum mauris volutpat.
+            Praesent bibendum porttitor ligula sed varius.
+          </p>
+        </div>
+      </div>
+    </div>
+    <span class="brlarge"></span>
 
     <!--JavaScript-->
     <script
