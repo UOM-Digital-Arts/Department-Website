@@ -1,4 +1,7 @@
-html,
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #E5e7e6;
 }
@@ -36,6 +39,7 @@ body {
 .fas.fa-globe.fa-2x,
 .fab.fa-brands.fa-linkedin-in.fa-2x{
   font-size: 2.1vh;
+  text-align: left;
 }
 /*#endregion Socials*/
 
@@ -298,10 +302,13 @@ body {
 .project-name {
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  font-weight: 600;
-  font-size: 4vmin;
+  font-weight: 500;
+  font-size: 3vmin;
+  line-height: 2.3vw;
+  text-align: justify;
   color: black;
   padding-left: 0px;
+  padding-right: 10vw;
   padding-top: 0px;
   margin-bottom: 0px;
 }
@@ -407,6 +414,12 @@ select.form-control {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.img-fluid.hover:hover{
+  transform: scale(1.01);
+  z-index: 999;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 /*#region Social Icons*/
