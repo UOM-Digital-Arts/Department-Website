@@ -1,11 +1,16 @@
 html{
   scroll-behavior: smooth;
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
 }
 
 body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
   background-color: #E5e7e6;
 }
-
 
 /*#region Socials*/
 /*Reference https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp*/
@@ -32,6 +37,12 @@ body {
   background-color: rgb(129, 107, 55);
 }
 
+.behance,
+.book,
+.globe {
+  text-decoration: none;
+}
+
 .fab.fa-facebook-f.fa-2x,
 .fab.fa-instagram.fa-2x, 
 .fab.fa-behance.fa-2x,
@@ -43,9 +54,14 @@ body {
 }
 /*#endregion Socials*/
 
+.brmedium {
+  display: block;
+  margin-bottom: 5%;
+}
+
 .brlarge {
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 6%;
 }
 
 /*#region Navbar*/
@@ -243,6 +259,12 @@ body {
   padding-bottom: 2vw;
   margin-bottom: 0px;
 }
+
+.student-image-2-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
 /*#endregion Cards*/
 
 /*#region Student Page*/
@@ -304,20 +326,17 @@ body {
   font-style: italic;
   font-weight: 500;
   font-size: 3vmin;
-  line-height: 2.3vw;
   text-align: justify;
   color: black;
   padding-left: 0px;
-  padding-right: 10vw;
   padding-top: 0px;
   margin-bottom: 0px;
 }
 
 .body-text-student {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8vmax;
-  line-height: 2vw;
-  padding-right: 10vw;
+  font-size: 0.9vmax;
+  line-height: 190%;
   text-align: justify;
   margin-bottom: 0px;
 }
@@ -329,7 +348,6 @@ body {
   border-radius: 15px;
   box-shadow: -1vw 1vw 0vw 0vw #7844cc;
   margin: auto;
-  margin-right: 10vmin;
 }
 
 .student-image-2 {
@@ -339,7 +357,6 @@ body {
   border-radius: 15px;
   box-shadow: -1vw 1vw 0vw 0vw #db0dd6;
   margin: auto;
-  margin-right: 10vmin;
 }
 
 .student-image-3 {
@@ -349,7 +366,6 @@ body {
   border-radius: 15px;
   box-shadow: -1vw 1vw 0vw 0vw #32e1c4;
   margin: auto;
-  margin-right: 10vmin;
 }
 
 /*#endregion Student Page*/
@@ -412,8 +428,8 @@ select.form-control {
 /*#endregion Sponsor Logos*/
 
 .img-fluid {
-  max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .img-fluid.hover:hover{
@@ -430,6 +446,7 @@ select.form-control {
   transform: translateY(80px);
   transform: translateX(-15px);
   z-index: 999;
+  padding-left: 4%;
 }
 
 .social-icons a {
@@ -439,7 +456,15 @@ select.form-control {
   text-align: left;
 }
 
-.social-icons a:hover {
+.social-icons-1 a:hover {
   color: #7844cc;
 }
 
+.social-icons-2 a:hover {
+  color: #db0dd6;
+}
+
+.social-icons-3 a:hover {
+  color: #32e1c4;
+}
+/*#endregion Social Icons*/
