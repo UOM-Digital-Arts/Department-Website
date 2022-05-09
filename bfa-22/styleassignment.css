@@ -294,7 +294,16 @@ body {
   font-weight:300;
   font-size:3vmin;
   margin-left: 20px;
+  position: relative;
 }
+
+.aboutus a:hover{
+
+  transform: scale(1.01);
+  z-index: 999;
+  position: relative;
+}
+
 
 .aboutusbody{
   font-family: "Montserrat", sans-serif;
@@ -308,8 +317,18 @@ body {
   margin-bottom: 0%;
 }
 
-.comingphoto{
+.aboutusbody a:hover{
+  
+  transform: scale(1.01);
+  z-index: 999;
+  position: fixed;
+}
+
+.coming-photo{
   position: relative;
+  margin-top: -20%;
+  
+  
   
 }
 /*#endregion Coming Soon Page*/
