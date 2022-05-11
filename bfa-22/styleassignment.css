@@ -1,14 +1,14 @@
-html{
+html {
   scroll-behavior: smooth;
-  margin:0;
-  padding:0;
-  overflow-x:hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  margin:0;
-  padding:0;
-  overflow-x:hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   background-color: #E5e7e6;
 }
 
@@ -44,14 +44,15 @@ body {
 }
 
 .fab.fa-facebook-f.fa-2x,
-.fab.fa-instagram.fa-2x, 
+.fab.fa-instagram.fa-2x,
 .fab.fa-behance.fa-2x,
 .fas.fa-book.fa-2x,
 .fas.fa-globe.fa-2x,
-.fab.fa-brands.fa-linkedin-in.fa-2x{
+.fab.fa-brands.fa-linkedin-in.fa-2x {
   font-size: 2.1vh;
   text-align: left;
 }
+
 /*#endregion Socials*/
 
 .brmedium {
@@ -96,6 +97,7 @@ body {
   font-size: 1.3rem;
   background-color: black;
 }
+
 .btn.btn-dark.btn-sm {
   height: 6vmin;
   width: 20vw;
@@ -120,6 +122,7 @@ body {
   z-index: 1;
   background-color: #E5e7e6;
 }
+
 /*#endregion Navbar*/
 
 /*#region Home Page*/
@@ -179,6 +182,7 @@ body {
   margin-block-end: 0rem;
   margin: 0rem;
 }
+
 /*#endregion Home Page*/
 
 /*#region Cards*/
@@ -265,6 +269,7 @@ body {
   height: auto;
   border-radius: 15px;
 }
+
 /*#endregion Cards*/
 
 /*#region Student Page*/
@@ -275,62 +280,45 @@ body {
 }
 
 /*#region Coming Soon Page*/
-.comingsoon{
+.comingsoon {
   font-family: "Oswald", sans-serif;
-  font-weight:900;
-  font-size:10vmin;
-  letter-spacing:10px;
+  font-weight: 900;
+  font-size: 8vmin;
+  letter-spacing: 8px;
 }
 
-.exhibition{
+.exhibition-title {
   font-family: "Oswald", sans-serif;
-  font-weight:430;
-  font-size:4.3vmin;
+  font-weight: 430;
+  font-size: 3.3vmin;
 }
 
-.aboutus{
- 
-  font-family: "Oswald", sans-serif;
-  font-weight:300;
-  font-size:3vmin;
-  margin-left: 20px;
+.exhibition-info {
   position: relative;
+  text-align: left;
+  color: white;
+  width: 100%;
 }
 
-.aboutus a:hover{
-
-  transform: scale(1.01);
-  z-index: 999;
-  position: relative;
-}
-
-
-.aboutusbody{
-  font-family: "Montserrat", sans-serif;
+.aboutus {
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 1.5vmin;
-  line-height: 1.8vw;
-  padding-right: 4vw;
-  text-align: justify;
-  margin-top: 0%;
-  margin-left: 20px;
-  margin-bottom: 0%;
-}
-
-.aboutusbody a:hover{
-  
-  transform: scale(1.01);
-  z-index: 999;
-  position: fixed;
-}
-
-.coming-photo{
+  font-size: 3vw;
   position: relative;
-  margin-top: -20%;
-  
-  
-  
 }
+
+.top-left-exhibition-body {
+  position: absolute;
+  top: 8px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 4%;
+}
+
 /*#endregion Coming Soon Page*/
 
 .student-name {
@@ -405,6 +393,7 @@ select.form-control {
   font-size: 2.5vmin;
   margin-top: 2vw;
 }
+
 .form-control {
   font-size: 2vmin;
 }
@@ -419,6 +408,7 @@ select.form-control {
   border-radius: 0;
   font-size: 1.5vw;
 }
+
 /*#endregion Forms*/
 
 .carousel-inner {
@@ -427,23 +417,10 @@ select.form-control {
 }
 
 /*#region Sponsor Logos*/
-.logos {
-  width: 150%;
-  height: 100%;
-  object-fit: contain;
+.sponsorsection {
+  padding: 5%;
 }
 
-.col.col-custom {
-  margin: 16.667%;
-  margin-bottom: 22.5%;
-}
-
-.row.row-custom {
-  align-items: flex-end;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 15.5vw;
-}
 /*#endregion Sponsor Logos*/
 
 .img-fluid {
@@ -451,7 +428,7 @@ select.form-control {
   width: 100%;
 }
 
-.img-fluid.hover:hover{
+.img-fluid.hover:hover {
   transform: scale(1.01);
   z-index: 999;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -486,4 +463,5 @@ select.form-control {
 .social-icons-3 a:hover {
   color: #32e1c4;
 }
+
 /*#endregion Social Icons*/
