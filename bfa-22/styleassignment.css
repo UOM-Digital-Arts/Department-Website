@@ -272,13 +272,6 @@ body {
 
 /*#endregion Cards*/
 
-/*#region Student Page*/
-.block-custom {
-  background: black;
-  height: 3vw;
-  border-radius: 0px 0px 0px 0px;
-}
-
 /*#region Coming Soon Page*/
 .comingsoon {
   font-family: "Oswald", sans-serif;
@@ -312,14 +305,21 @@ body {
   top: 8px;
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  font-size: 2vw;
+  font-size: 1.4vw;
   width: 100%;
   padding-left: 7%;
   padding-right: 7%;
-  padding-top: 4%;
+  padding-top: 3%;
 }
 
 /*#endregion Coming Soon Page*/
+
+/*#region Student Page*/
+.block-custom {
+  background: black;
+  height: 3vw;
+  border-radius: 0px 0px 0px 0px;
+}
 
 .student-name {
   font-family: "Oswald", sans-serif;
