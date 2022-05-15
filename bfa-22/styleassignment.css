@@ -84,9 +84,20 @@ body {
   font-size: 1.15rem;
 }
 
+.nav-link-white {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
+  color: #E5e7e6 !important;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.nav-item {
+  text-align: center;
+}
+
 .navbar-nav,
 .mr-auto {
-  flex-basis: 20rem;
   margin: 0rem;
   display: flex;
   justify-content: space-around;
@@ -104,6 +115,7 @@ body {
   font-size: 2vmin;
 }
 
+
 .btn.btn-dark:hover {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
@@ -118,10 +130,29 @@ body {
 }
 
 #navbarText {
-  position: relative;
   z-index: 1;
-  background-color: #E5e7e6;
+  /*background-color: #E5e7e6;*/
 }
+
+.offcanvas {
+  background-color: #010000df;
+}
+
+.offcanvas-header,
+.offcanvas-body {
+  justify-content: center;
+}
+
+#navBarClose {
+  text-align: end;
+  margin-top: 30px;
+}
+
+#offcanvasRightLabel {
+  color: #E5e7e6;
+}
+
+
 
 /*#endregion Navbar*/
 

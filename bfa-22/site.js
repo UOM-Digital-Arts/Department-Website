@@ -47,4 +47,6 @@ if ($('.gallery-section').length > 0) {
 
     });
 
+
+
 }
