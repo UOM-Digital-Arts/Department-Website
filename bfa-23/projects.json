@@ -1,0 +1,356 @@
+{
+    "projects": [
+        {
+            "id": "maya",
+            "display_name": "MAYA",
+            "author": "MAYA (SURNAME)",
+            "type": "Graphic Design",
+            "short_title": "Posters in Motion",
+            "title": "Understanding the boundaries of posters <br>through the design of motorsport posters",
+            "description": "Maya's dissertation explores the exciting potential of incorporating animation and motion into static poster designs, specifically in the context of motorsport. By creating a series of posters that blend physical and digital elements, including augmented reality tech, she aims to push the boundaries of traditional poster design and contribute to the advancement of visual communication in the digital age.",
+            "cover_image": "./projects/maya/PPG_MAYA.png",
+            "image": "./projects/maya/MAYA.jpg",
+            "template": "7",
+            "images": "./projects/maya/images/",
+            "behance": "https://www.behance.net/mayalaferla"
+        },
+
+        {
+            "id": "clive",
+            "display_name": "CLIVE",
+            "author": "CLIVE (SURNAME)",
+            "type": "MIXED MEDIA",
+            "short_title": "Ornate & Elaborate Design",
+            "title": "Ornate & Elaborate Design - Għarb",
+            "description": "The aim of the dissertation is to explore further, whilst also documenting and collecting some of the most intricate design motifs which decorate the village of Għarb. The collection and analysis of these intricate, decorative designs was done by the use of contemporary methods and techniques. Photography was used as the primary method of data collection, whilst vector illustrations were used to enhance or visualise better a particular design. All the gathered data was then collected and presented in a one single printed publication.",
+            "cover_image": "./projects/clive/PPG_CLIVE.png",
+            "image": "./projects/clive/CLIVE.jpg",
+            "template": "7",
+            "images": "./projects/clive/images/"
+        },
+
+        {
+            "id": "gianluca",
+            "display_name": "GIANLUCA",
+            "author": "GIANLUCA (SURNAME)",
+            "type": "Photography",
+            "short_title": "Solitude",
+            "title": "Solitude: A photographic project <br>exploring the relationship between the feeling <br>of loneliness and the notion of living alone in <br>relation to ageing",
+            "description": "This project delves into the deeply personal and complex experience of transitioning into widowhood and the relationship between this experience and the concept of solitude. Through an intimate exploration of the subject's great grandmother's journey, the thesis captures the beauty and complexities of solitude in the face of loss. Over the span of six months, the photographer has documented the emotional highs and lows of this transition, revealing the intricacies of the human experience in times of great challenge. Through a series of compelling images, this thesis provides a powerful and thought-provoking reflection on the meaning and value of solitude in times of grief.",
+            "cover_image": "./projects/gianluca/PPG_GIANLUCA.png",
+            "image": "./projects/gianluca/GIANLUCA.jpg",
+            "template": "1",
+            "images": "./projects/gianluca/images/",
+            "behance": "https://gianlucaschembri.myportfolio.com/"
+        },
+
+        {
+            "id": "miguel",
+            "display_name": "MIGUEL",
+            "author": "MIGUEL (SURNAME)",
+            "type": "3D modelling and Printing",
+            "short_title": "FinKins",
+            "title": "FinKins: A 3D printed Dolphin board game,<br> exploring the hierarchy of animals from<br> the perspective of humans, focusing on<br> Dolphins in captivity.",
+            "description": "The aim of this dissertation is to experiment with how humans view animals, the level of importance of certain animals in human's eyes. Therefore, Miguel created this 3D board game in order to put the players (humans) in the shoes of Dolphins in captivity, used and restricted to live as humans want them too. This dissertation wants to install a level of empathy towards these Dolphins. By having the work 3D printed, this would allow the players to experience something new and have a more realistic experience of the conditions put on captive dolphins.",
+            "cover_image": "./projects/miguel/PPG_MIGUEL.png",
+            "image": "./projects/miguel/MIGUEL.jpg",
+            "template": "7",
+            "images": "./projects/miguel/images/"
+        },
+
+        {
+            "id": "nicole",
+            "display_name": "NICOLE",
+            "author": "NICOLE (SURNAME)",
+            "type": "Digital Illustration",
+            "short_title": "ADHD & ME",
+            "title": "ADHD & ME: A Self-Reflective Journey <br>through Graphic Storytelling",
+            "description": "Nicole's dissertation revolves around her personal experiences with ADHD and how she deals with the traits of it on a daily basis which was done in the form of a graphic novel. By creating a graphic novel, she wished for neurotypical readers to gain an understanding and insight into ADHD as well as for neurodivergent people with ADHD to feel seen and understood. Her project also focuses on text and illustrations that work together to convey her thoughts and experiences to the reader. Through the course of her project, she aimed to highlight the thought process and misconceptions of ADHD as well as to promote a more personal and in depth understanding of the disorder.",
+            "cover_image": "./projects/nicole/PPG_NICOLE.png",
+            "image": "./projects/nicole/NICOLE.jpg",
+            "template": "2",
+            "images": "./projects/nicole/images/"
+        },
+
+        {
+            "id": "olga",
+            "display_name": "OLGA",
+            "author": "OLGA SATER",
+            "type": "Photography",
+            "short_title": "Re-framing 'Nies tal-Pjazza'",
+            "mobile_short_title": "Re-framing<br>'Nies tal-Pjazza'",
+            "title": "Re-framing 'Nies tal-Pjazza': Portraiture <br>through deadpan methodology",
+            "mobile_title": "Re-framing<br>'Nies tal-Pjazza': Portraiture <br>through deadpan methodology",
+            "description": "Olga's research project examines the issue of objectivity in deadpan photographic portraiture and investigates whether deadpan portraiture enables a subject to visually convey a dominant personality trait. <br> <br>The study is based on a sample of 63 male individuals belonging to a specific Maltese social group that is called 'nies tal-pjazza' (people of the village square) recruited and photographed in public areas across eight Maltese villages. The deadpan portraits as well as the ethnographic observations of the researcher before, during, and after the photography sessions are systematically analysed through engagement with the theories of non-verbal communication, body language, and personality traits.",
+            "cover_image": "./projects/olga/PPG_OLGA.png",
+            "image": "./projects/olga/OLGA.jpg",
+            "carousel_qty": 2,
+            "template": "2c",
+            "images": "./projects/olga/images/",
+            "behance": "https://www.behance.net/olgasater"
+        },
+
+        {
+            "id": "camille",
+            "display_name": "CAMILLE",
+            "author": "CAMILLE (SURNAME)",
+            "type": "MIXED MEDIA",
+            "short_title": "Visual Music",
+            "title": "Visual Interpretation of Music through Design",
+            "description": "Camille's project explores the integration of music and visual art, and how through this collaboration one gets to experience the two from a new perspective. By studying the connections between these art forms, through various themes, a multi-sensory experience is created. This is done through experimental work, where a curated playlist, that features, Indie music is translated into a visual journey. The project aims to prioritise the user's experience when it comes to listening to music. Due to the introduction of visuals, the audience is more immersed in the subject, where they are invited to use more senses and get a better understanding of the music provided.",
+            "video": "https://www.youtube.com/embed/_uWBJEpcg8I",
+            "cover_image": "./projects/camille/PPG_CAMILLE.png",
+            "image": "./projects/camille/CAMILLE.jpg",
+            "template": "3",
+            "images": "./projects/camille/images/",
+            "instagram": "https://www.instagram.com/artbyluna_a/"
+        },
+        
+        {
+            "id": "max",
+            "display_name": "MAX",
+            "author": "MAX (SURNAME)",
+            "type": "3D Animation",
+            "short_title": "Fight Scene",
+            "title": "Action Scene Analysis in Animation",
+            "description": "Max's project focuses on the analysis of action scenes in film and using 3D animation to create a fight scene to explore these findings. The animation has a singular fight scene using two different screenplays to compare and explore variations in action scenes.",
+            "video": "https://www.youtube.com/embed/Vcp7U2Fjt6M",
+            "cover_image": "./projects/max/PPG_MAX.png",
+            "image": "./projects/max/MAX.jpg",
+            "template": "3",
+            "images": "./projects/max/images/",
+            "instagram": "https://www.instagram.com/maxdrawingart/"
+        },
+        
+        {
+            "id": "deborah",
+            "display_name": "DEBORAH",
+            "author": "DEBORAH (SURNAME)",
+            "type": "Web Design",
+            "short_title": "Boxxla",
+            "title": "An Investigation in Developing Mood-Oriented <br>UX/UI Design for a Custom Event Application.",
+            "description": "Deborah`s project focuses on designing a custom event application that is uniquely centred around the user's mood. By displaying events that match the user's current state of mind, therefore this application provides a more personalised and engaging experience. The user interface and user experience have been optimised to deliver an individualised and seamless navigation of local events, providing users with a helpful tool that enhances their overall event-going experience.",
+            "video": "https://www.youtube.com/embed/Ze_mL2PJ8W8",
+            "cover_image": "./projects/deborah/PPG_DEBORAH.png",
+            "image": "./projects/deborah/DEBORAH.jpg",
+            "carousel_qty": 4,
+            "template": "5",
+            "images": "./projects/deborah/images/"
+        },
+        
+        {
+            "id": "james",
+            "display_name": "JAMES",
+            "author": "JAMES (SURNAME)",
+            "type": "Animation",
+            "short_title": "Surreal Animation Film",
+            "title": "An audiovisual short animation film, <br>influenced by surrealist psychic automatism",
+            "description": "James' dissertation, came as a result of wanting to explore more in depth the medium of animation, through which he could attempt to bring to life and populate an eerie, slightly surreal and fantasy inspired world. The creation of the world was driven by experimenting with Surrealist techniques on psychic automatism. These served as an exploration of the unconscious mind and lead me to explore the contradictions between public and self, conscious and unconscious. The animation was created by implementing and taking advantage of both 3D and 2D software/techniques, in order to facilitate and enhance the production workflow.",
+            "video": "https://www.youtube.com/embed/0ZfpuXp7NI4",
+            "cover_image": "./projects/james/PPG_JAMES.png",
+            "image": "./projects/james/JAMES.jpg",
+            "template": "3",
+            "images": "./projects/james/images/"
+        },
+
+        {
+            "id": "rachel",
+            "display_name": "RACHEL",
+            "author": "RACHEL (SURNAME)",
+            "type": "MIXED MEDIA",
+            "short_title": "Traces of Memory",
+            "title": "Traces of Memory: Archiving the indirect <br>self-portrait in a MIXED MEDIA project",
+            "description": "With a focus on capturing everyday experiences through visual art, this research employs a practice-based, MIXED MEDIA approach to memory archiving. Rachel explores how other artists translate their own memories, feelings, and experiences into visually stunning works of art. Digital illustrations emerge from her practice as research, which she then transforms into illustrative embroidered works. Combining the digital and the traditional, each minimalistic and allusive illustration is carefully embroidered onto found fabric, culminating in an installation that ultimately aims to evoke personal memories, experiences, and emotions in every viewer.",
+            "video": "https://www.youtube.com/embed/u31qwQUeGuM",
+            "cover_image": "./projects/rachel/PPG_RACHEL.png",
+            "image": "./projects/rachel/RACHEL.jpg",
+            "template": "4",
+            "images": "./projects/rachel/images/",
+            "behance": "https://linktr.ee/rachelflerisoler?utm_source=linktree_admin_share"
+        },
+
+        {
+            "id": "bernie",
+            "display_name": "BERNIE",
+            "author": "BERNIE (SURNAME)",
+            "type": "Virtual Reality/3D",
+            "short_title": "Empty Space and Motion",
+            "title": "Empty Space and Time through Motion: <br>Immersive Experience Design",
+            "description": "Bernie is a traditional artist with a background in Film Making, 2D animation and Motion Design. He has been working with MIXED MEDIA, graphic design, digital illustration and sculpting as a way to expand his artistic portfolio, and to gain a holistic approach to his creative process. This led him to consider Virtual Reality as a medium for his dissertation. This dissertation is an exploration of the use of empty space and rhythm within 3-dimensional, immersive environments, and of how these elements affect the visualisation of an artwork in a virtual exhibition. Through the use of Minimalist design elements, 3D animation and sound design, 3 different virtual environments were created to illustrate the impact of space and movement in Virtual Reality.",
+            "video": "https://www.youtube.com/embed/BPzGlv-8fNg",
+            "cover_image": "./projects/bernardo/PPG_BERNARDO.jpg",
+            "image": "./projects/bernardo/BERNIE.jpg",
+            "template": "4",
+            "images": "./projects/bernardo/images/",
+            "instagram": "https://www.instagram.com/benimaru.motion/"
+        },
+
+        {
+            "id": "drew",
+            "display_name": "DREW",
+            "author": "ANDREW (SURNAME)",
+            "type": "VIRTUAL REALITY",
+            "short_title": "Archetypal Sculpture",
+            "title": "Archetypal Sculpture: <br>Confronting the Jungian Shadow via <br>Symbolisation and Telepresence",
+            "description": "This dissertation tackles Carl Gustav Jung's theory of the unconscious, and explores how the concept of a 'shadow archetype' may be visualised through symbolism as virtual sculpture, based on the subjective experience of the archetype. The shadow archetype can be defined as the parts of the self that are hidden and difficult to face, and are therefore generally avoided by the self. Virtual Reality is used as a medium to encourage confrontation with this part of the self in a space that is absolutely private and isolated.",
+            "video": "https://www.youtube.com/embed/zS3EnLOpHVY",
+            "cover_image": "./projects/andrew/PPG_ANDREW.png",
+            "image": "./projects/andrew/ANDREW.jpg",
+            "carousel_qty": 5,
+            "template": "5",
+            "images": "./projects/andrew/images/",
+            "instagram": "https://www.instagram.com/drew.deguara",
+            "behance": "https://www.behance.net/andrewdeguara"
+        },
+
+        {
+            "id": "ellie",
+            "display_name": "ELLIE",
+            "author": "ELLIE (SURNAME)",
+            "type": "Virtual Reality",
+            "short_title": "Trial by Torchlight",
+            "title": "Trial by Torchlight: The Utilisation of Context Clues <br>within an Interactive VR Environment",
+            "description": "Being Ellie's first video game development experience, this project revolved around a virtual reality game that is set within a megalithic temple.In a non-linear progression, the player chooses which puzzle to complete first and has complete reign over which steps they will take next. This is done through subtle contextual clues, which Virtual Reality is the ideal medium for. Everything is done from scratch throughout the entire process, from the initial concept art to the final small details like a little lizard resting on a rock.",
+            "video": "https://www.youtube.com/embed/IG9YkpqFSiI",
+            "cover_image": "./projects/elisa/PPG_ELISA.png",
+            "image": "./projects/elisa/ELISA.jpg",
+            "carousel_qty": 9,
+            "template": "5",
+            "images": "./projects/elisa/images/",
+            "instagram": "https://www.instagram.com/neq_scribbles/",
+            "behance": "https://www.behance.net/ellieabela"
+        },
+
+        {
+            "id": "christabel",
+            "display_name": "CHRISTABEL",
+            "author": "CHRISTABEL (SURNAME)",
+            "type": "MIXED MEDIA",
+            "short_title": "Unearthing Traces of a Home",
+            "title": "Unearthing Traces of a Home: Exploring Memory, Domesticity and Absence through a MIXED MEDIA Project",
+            "description": "Christabel's dissertation revolves around the themes of memory, domesticity and absence in relation to her great-grandmother's house. Through the use of old TV sets, she creates a multimedia installation which captures and preserves the final moments of this house within her photographs. By utilizing the concepts of movement and time, the viewer witnesses the memories and changes that her great-grandmother's house had undergone over time and even engages in self-reflection. There is also the interplay between the digital and the analogue as well as the intangible and the tangible present in her installation.",
+            "video": "https://www.youtube.com/embed/Zg2S4lSpzL0",
+            "cover_image": "./projects/christabel/PPG_CHRISTABEL.jpg",
+            "image": "./projects/christabel/CHRISTABEL.jpg",
+            "carousel_qty": 5,
+            "template": "5",
+            "images": "./projects/christabel/images/",
+            "instagram": "https://www.instagram.com/chri_stabelcamilleri/"
+        },
+
+        {
+            "id": "katriona",
+            "display_name": "KATRIONA",
+            "author": "KATRIONA (SURNAME)",
+            "type": "MIXED MEDIA",
+            "short_title": "Xejba",
+            "title": "XEJBA/Memory and Place: towards a <br>personal understanding of the correlation <br> between the two, in association with <br>time, recollection, and identity.",
+            "description": "In her project, Katriona investigates the intricacy and delicacy that goes behind the deep-rooted relationship she has honed with her grandmother's house throughout her life. The word “Xejba” is the name of the street where the house is located. It represents the amalgamation of multimedia place-mapping practices which generated different layers of information about the house. This personal subject matter is tackled through varied, engaging visual contemporary art techniques including film photography, collage, frottage, writings, and object-collecting - all culminating in one olfactive, tactile, nostalgia-inducing installation piece where the viewer is sensitized to concepts of place attachment and sense of place.",
+            "video": "https://www.youtube.com/embed/u31qwQUeGuM",
+            "cover_image": "./projects/katriona/PPG_KATRIONA.png",
+            "image": "./projects/katriona/KATRIONA.jpg",
+            "carousel_qty": 6,
+            "template": "5",
+            "images": "./projects/katriona/images/",
+            "instagram": "https://www.instagram.com/anoirtak/"
+        },
+
+        {
+            "id": "matthew",
+            "display_name": "MATTHEW",
+            "author": "MATTHEW (SURNAME)",
+            "type": "Film and 3D software",
+            "short_title": "The Unsinkables",
+            "title": "Recreating a seminal Maltese event from <br>World-War 2 using MIXED MEDIA animation:  <br>An Animated Trailer of The Unsinkables",
+            "description": "\"The Unsinkables\" is a digital art project that uses film and 3D software to recreate a pivotal moment in World War II history: the Operation Pedestal convoy battle. Through meticulous research, development, and production efforts, the project delivers an immersive and educational experience that offers viewers a glimpse into the courage and sacrifice of the brave men who fought in this legendary battle. The project features a trailer that follows the journey of two brothers as they navigate the perilous waters of the Mediterranean during the war. Through its innovative use of digital tools, \"The Unsinkables\" offers a unique perspective on the intersection of history and technology.",
+            "video": "https://www.youtube.com/embed/u31qwQUeGuM",
+            "cover_image": "./projects/matthew/PPG_MATTHEW (1).png",
+            "image": "./projects/matthew/MATTHEW.jpg",
+            "carousel_qty": 4,
+            "template": "5",
+            "images": "./projects/matthew/images/",
+            "instagram": "https://www.instagram.com/malta.ai/"
+        },
+
+        {
+            "id": "martina",
+            "display_name": "MARTINA",
+            "author": "MARTINA (SURNAME)",
+            "type": "3D modelling/Sculpting",
+            "short_title": "Three Dimensional Model and AR",
+            "title": "Creating Interaction through 3D Self-Model and Augmented Reality",
+            "description": "In this research project, the goal is to elevate the level of interactivity between the viewer and artwork. Using an approach that incorporates augmented reality, a fascinating 3D model is brought to life when a QR code is scanned. Through the exploration of 3D self-portraiture, this dissertation delves into the realm of interactivity and mixed reality. The utilisation of augmented reality technology creates a dynamic mixed-reality environment that captivates and enthralls the audience. This approach moves beyond the traditional mode of passive observation to active involvement, creating an immersive experience that is sure to leave a lasting impression.",
+            "video": "https://www.youtube.com/embed/CJ6Y-zRoSlU",
+            "cover_image": "./projects/martina/PPG_MARTINA.png",
+            "image": "./projects/martina/MARTINA.jpg",
+            "carousel_qty": 8,
+            "template": "5",
+            "images": "./projects/martina/images/",
+            "instagram": "https://instagram.com/martina_micallef__?igshid=YmMyMTA2M2Y="
+        },
+
+        {
+            "id": "liam",
+            "display_name": "LIAM",
+            "author": "LIAM (SURNAME)",
+            "type": "Animation",
+            "short_title": "A search for the 'soul'",
+            "title": "A Digital MIXED MEDIA approach on a search <br>for the 'soul' through Jungian terminology",
+            "description": "The project revolves around Liam's reconciliation with himself as a creative, understanding himself and his expressions as an artist, through symbolic creations and experimentations. Liam looked to Carl Jung's personal reflections on the human psyche and the unconscious, salvaging his 'soul', in an attempt to produce a project hailing from Jung's work informing Liam's own reflections. Jung talks about the feminine aspect of the 'soul' present in men; the 'anima', which has connotations with being an underlying structure, the yin to the yang. Apart from the 'soul',  Liam's appeal to various art-making mediums are meant to portray an ordered-chaotic unconscious that is manoeuvred through, until the blossoming of an expressive dance ('soul').",
+            "video": "https://www.youtube.com/embed/qK3EK3S4I_8",
+            "cover_image": "./projects/liam/PPG_LIAM.jpg",
+            "image": "./projects/liam/LIAM.jpg",
+            "carousel_qty": 6,
+            "template": "5",
+            "images": "./projects/liam/images/",
+            "instagram": "https://www.instagram.com/liamsart.8/"
+        },
+
+        {
+            "id": "anthea",
+            "display_name": "ANTHEA",
+            "author": "ANTHEA MIFSUD",
+            "type": "GRAPHIC DESIGN",
+            "short_title": "L-Antika",
+            "title": "Unleashing the Potential of L-Antika: <br>Elevating the Card Deck Experience",
+            "description": "Anthea's project, L-Antika, is all about bringing traditional Maltese games back to life. With a redesigned deck of cards inspired by the Maltese landscape, and a prototype mobile app that gamifies the archival of playing card games, Anthea aims to bridge the gap between traditional games and the community. Not only will you enhance your card-playing experience with L-Antika, but you'll also learn about how Maltese people spent their time in the past, while having fun in the present!",
+            "cover_image": "./projects/anthea/PPG_ANTHEA (1).png",
+            "image": "./projects/anthea/ANTHEA.jpg",
+            "carousel_qty": 5,
+            "template": "6",
+            "images": "./projects/anthea/images/",
+            "instagram": "https://www.instagram.com/anth.eea/?igshid=ZjE2NGZiNDQ%3D"
+        },
+
+        {
+            "id": "maria",
+            "display_name": "MARIA",
+            "author": "MARIA (SURNAME)",
+            "type": "Photography",
+            "short_title": "Exploration of Time",
+            "title": "Exploration of Time Through Self-Portraiture",
+            "description": "For Maria, the goal of this project is to observe the impact of the passage of time on the self, captured via self-portraits. Time is an aspect of the human condition that is often overlooked unless we are hassling over deadlines and appointments. This project is an attempt to acknowledge and showcase invisible moments in our daily lives as time goes by, via photography. The viewer is invited to meditate on the unconscious behaviours we display in such fleeting, negligible moments that are forgotten over the course of time, yet are an essential part of who we are.",
+            "cover_image": "./projects/maria/PPG_MARIA3.jpg",
+            "image": "./projects/maria/MARIA.jpg",
+            "carousel_qty": 6,
+            "template": "6",
+            "images": "./projects/maria/images/"
+        },
+
+        {
+            "id": "sarah",
+            "display_name": "SARAH",
+            "author": "SARAH (SURNAME)",
+            "type": "Photography",
+            "short_title": "Ephemera",
+            "title": "Discovering the hidden beauty of the human body <br>through a photographic study of visual similarities <br>between nature and the human body",
+            "description": "This research project presents a different way of perceiving the beauty of the human body by observing its flaws, mortality and at times its fragile being. The intended message is communicated through photographs and objects collected from the ecological environment. By highlighting our connection to nature through the visual similarities, the three aforementioned human qualities are presented as natural and thus normal.",
+            "cover_image": "./projects/sarah/PPG_SARAH.png",
+            "image": "./projects/sarah/SARAH.jpg",
+            "carousel_qty": 6,
+            "template": "6",
+            "images": "./projects/sarah/images/",
+            "behance": "https://www.behance.net/sarahcilia1"
+        }
+    ]
+}

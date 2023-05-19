@@ -1,0 +1,133 @@
+/* Landing logo */
+#landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em;
+
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+
+    color: var(--white);
+    height: 40vh;
+    width: 100%;
+}
+
+#landing img {
+    width: 35em;
+    max-width: 50%;
+}
+
+/* EXPERIENCE THE PROJECTS */
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--white);
+
+
+    padding: 1em;
+
+    width: 100%;
+}
+
+#experience-mobile {
+    display: none;
+}
+
+#experience p {
+    padding: 0.2em;
+    transition: 0.2s;
+    margin-bottom: 0.5em;
+    width: auto;
+    text-align-last: justify;
+}
+
+#experience p:hover {
+    color: var(--bg);
+    animation-name: highlight_in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-size: 200%;
+    background-image: linear-gradient(to right, transparent 50%, var(--yellow) 50%);
+}
+
+@keyframes highlight_in {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: -100%;
+    }
+}
+
+@keyframes highlight_out {
+    from {
+        background-position: -100%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    #landing {
+        height: 10vh;
+    }
+
+    #landing img {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #experience {
+        display: none;
+    }
+
+    #experience-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+
+        padding-left: 2em;
+
+        font-size: 1.5em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: var(--white);
+
+        width: 100%;
+    }
+
+    #experience-mobile p {
+        padding-bottom: 1em;
+    }
+
+}
