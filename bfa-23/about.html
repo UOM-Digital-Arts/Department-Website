@@ -39,7 +39,7 @@
         <li><a href="./projects.html">PROJECTS</a></li>
         <li><a href="./sponsors.html">SPONSORS</a></li>
         <li><a href="https://issuu.com/sintesi-bfa2023/docs/sintesi-catalogue" target="_blank">CATALOGUE</a></li>
-        <!-- <li><a href="#">VIRTUAL EXPO</a></li> -->
+        <li><a href="./virtualexpo.html">VIRTUAL EXPO</a></li>
       </ul>
     </nav>
 
@@ -50,7 +50,7 @@
       <li><a href="./projects.html">PROJECTS</a></li>
       <li><a href="./sponsors.html">SPONSORS</a></li>
       <li><a href="https://issuu.com/sintesi-bfa2023/docs/sintesi-catalogue" target="_blank">CATALOGUE</a></li>
-      <!-- <li><a href="#">VIRTUAL EXPO</a></li> -->
+      <li><a href="./virtualexpo.html">VIRTUAL EXPO</a></li>
     </ul>
 
   </header>
@@ -62,13 +62,48 @@
         <img src="./images/Group.jpg" alt="group" />
       </span>
       <span class="right">
-        <p>Sintesi is an exhibition showcasing the culmination of the BFA in Digital Arts course at the University of Malta
+        <p>Sintesi is an exhibition showcasing the culmination of the BFA in Digital Arts course at the University of
+          Malta
         </p><br>
 
         <p>The term Sintesi reflects the process of combining elements to synthesise art and express complex concepts.
-          The exhibition celebrates the diverse artistic abilities of the students, showcasing projects in virtual reality, mixed media,
+          The exhibition celebrates the diverse artistic abilities of the students, showcasing projects in virtual
+          reality, mixed media,
           photography, graphic design, illustration, and animation.</p>
+
+
+
+        <div id="scroll-down">
+          <img id="downarrow" src="./images/scroll-down.png" onclick="scrollToContent()">
+        </div>
       </span>
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="carouselsection">
+      <div class="carousel">
+        <div class="carousel-container">
+          <!-- <div class="carousel-slide">
+            <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 1">
+          </div>
+          <div class="carousel-slide">
+            <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 2">
+          </div>
+          <div class="carousel-slide">
+            <img src="images\IMG_9312-3 copy_sm.jpg" alt="Image 3">
+          </div> -->
+        </div>
+
+        <a class="carousel-prev"><img class="carouselleft" src="./images/scroll-down.png"></a>
+        <a class="carousel-next"><img class="carouselright" src="./images/scroll-down.png"></a>
+
+        <div class="carousel-indicators">
+          <!-- <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span> -->
+        </div>
+      </div>
     </div>
   </div>
 
@@ -90,6 +125,332 @@
       </a>
     </div>
   </div>
+
+  <div id="lightbox">
+    <img id="lightbox-image" src="./images/yellowportait.png">
+  </div>
 </body>
+
+<script>
+  let html = document.getElementsByTagName("html")[0];
+
+  // scrolldown turns yellow on hover
+  let downarrow = document.getElementById("downarrow");
+  let carousellefts = document.getElementsByClassName("carouselleft");
+  let carouselrights = document.getElementsByClassName("carouselright");
+
+  downarrow.addEventListener("mouseover", function () {
+    downarrow.src = "./images/scroll-down-yellow.png";
+  });
+
+  downarrow.addEventListener("mouseout", function () {
+    downarrow.src = "./images/scroll-down.png";
+  });
+
+  // carouselleft.addEventListener("mouseover", function () {
+  //   carouselleft.src = "./images/scroll-down-yellow.png";
+  // });
+
+  // carouselleft.addEventListener("mouseout", function () {
+  //   carouselleft.src = "./images/scroll-down.png";
+  // });
+  for (let i = 0; i < carousellefts.length; i++) {
+    carousellefts[i].addEventListener("mouseover", function () {
+      carousellefts[i].src = "./images/scroll-down-yellow.png";
+    });
+
+    carousellefts[i].addEventListener("mouseout", function () {
+      carousellefts[i].src = "./images/scroll-down.png";
+    });
+  }
+
+  // carouselright.addEventListener("mouseover", function () {
+  //   carouselright.src = "./images/scroll-down-yellow.png";
+  // });
+
+  // carouselright.addEventListener("mouseout", function () {
+  //   carouselright.src = "./images/scroll-down.png";
+  // });
+
+  for (let i = 0; i < carouselrights.length; i++) {
+    carouselrights[i].addEventListener("mouseover", function () {
+      carouselrights[i].src = "./images/scroll-down-yellow.png";
+    });
+
+    carouselrights[i].addEventListener("mouseout", function () {
+      carouselrights[i].src = "./images/scroll-down.png";
+    });
+  }
+
+  function showObject() {
+      let do_carousel = true;
+      let carousel_qty = 35;
+
+      let template = document.getElementById('carouselsection');
+      template.style.display = "flex";
+
+      if (do_carousel) {
+        // set carousel images if present
+        let carousel_container = document.querySelectorAll(".carousel-container");
+        let carousel_indicators = document.querySelectorAll(".carousel-indicators");
+
+        // Convert NodeList to array
+        carousel_container = Array.from(carousel_container);
+        carousel_indicators = Array.from(carousel_indicators);
+
+        // create array of images from project.images/carousel
+        let carousel_images = [];
+        for (let i = 1; i <= carousel_qty; i++) {
+          carousel_images.push("./images/about/" + i + ".jpg");
+        }
+
+        console.log(carousel_container);
+        console.log(carousel_images);
+
+        // clear container contents
+        carousel_container.forEach(function (container) {
+          container.innerHTML = '';
+        });
+
+        // set carousel images
+        carousel_images.forEach(function (image, index) {
+          carousel_container.forEach(function (container) {
+            container.innerHTML += ' \
+      <div class="carousel-slide"> \
+        <img src="' + image + '" alt="Image ' + index + '"> \
+      </div> \
+    ';
+          });
+        });
+
+        console.log(carousel_container);
+
+        // clear indicator contents
+        carousel_indicators.forEach(function (indicator) {
+          indicator.innerHTML = '';
+        });
+
+        // set carousel indicators
+        carousel_images.forEach(function (image, index) {
+          carousel_indicators.forEach(function (indicator_container) {
+            indicator_container.innerHTML += ' \
+      <span class="indicator"></span> \
+    ';
+          });
+        });
+
+        console.log(carousel_indicators);
+
+        // set first image to active
+        let carousel_slides = document.querySelectorAll(".carousel-slide");
+        console.log(carousel_slides);
+
+        if (carousel_slides) {
+          carousel_slides[0].classList.add("active");
+
+
+          // set carousel indicator active
+          let indicators = document.querySelectorAll(".indicator");
+          console.log(indicators);
+
+          indicators[0].classList.add("active");
+
+          activateCarousel();
+        }
+      }
+
+
+      // Close fullscreen when press esc unless lightbox is 
+      document.addEventListener("keydown", function (event) {
+        if (event.keyCode == 27 && lightbox.style.display == "none") {
+          fadeOutFullscreen();
+        }
+      });
+
+      let lightbox = document.getElementById("lightbox");
+      let lightbox_image = document.getElementById("lightbox-image");
+
+      // add lightbox to carousel images
+      let carousel_images_lightbox = document.querySelectorAll(".carousel-slide img");
+      console.log(carousel_images_lightbox)
+
+      for (let i = 0; i < carousel_images_lightbox.length; i++) {
+        console.log(carousel_images_lightbox[i])
+        carousel_images_lightbox[i].onclick = function () {
+          lightbox.style.display = "flex";
+          lightbox_image.src = "./images/about/" + (i + 1) + ".jpg";
+
+          console.log(lightbox)
+          console.log(lightbox.style.display)
+        }
+
+        console.log(carousel_images_lightbox)
+      }
+
+
+      // close lightbox on click outside lightbox or press esc
+      document.getElementById("lightbox").onclick = function () {
+        document.getElementById("lightbox").style.display = "none";
+      }
+
+      document.onkeydown = function (evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 27) {
+          setTimeout(function () {
+            document.getElementById("lightbox").style.display = "none";
+          }, 10);
+        }
+      };
+  }
+
+  function hideObject() {
+    fullscreen.style.display = "none";
+  }
+
+  function scrollToContent() {
+    let content = document.getElementById("content");
+    // get first child which is not display none
+    let children = content.children;
+    for (let i = 0; i < children.length; i++) {
+      if (children[i].style.display != "none") {
+        content = children[i];
+        break;
+      }
+    }
+
+    content = content.firstElementChild;
+
+    content.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+
+  function fadeOutFullscreen() {
+    // stop playback of all youtube videos
+    let videos = document.querySelectorAll("iframe");
+    videos.forEach(function (video) {
+      let src = video.src;
+      video.src = src;
+    });
+
+    fullscreen.animate({
+      opacity: 0
+    }, 400, function () {
+      $(document).css("display", "none");
+    });
+
+    setTimeout(function () {
+      fullscreen.style.display = "none";
+      fullscreen.style.overflowY = "hidden";
+      html.style.overflowY = "auto";
+    }, 300);
+
+  }
+
+  document.onkeydown = function (evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27 || evt.keyCode == 8) {
+      fadeOutFullscreen()
+    }
+  };
+
+  let description = document.getElementById("objdescription");
+  function collapse() {
+    // Extended
+    if (description.style.width) {
+      description.style.width = null;
+
+      // Collapsed
+    } else {
+      description.style.width = "25%";
+    }
+  }
+
+  showObject();
+
+  function activateCarousel() {
+    const carousel = document.querySelector('.carousel');
+    const carouselSlides = document.querySelectorAll('.carousel-slide');
+    const carouselPrev = document.querySelector('.carousel-prev');
+    const carouselNext = document.querySelector('.carousel-next');
+    const carouselIndicators = document.querySelectorAll('.indicator');
+
+    let slideIndex = 0;
+
+    // Show the initial slide and set the active indicator
+    showSlide(slideIndex);
+    setActiveIndicator(slideIndex);
+
+    // Move to the previous slide
+    carouselPrev.addEventListener('click', () => {
+      slideIndex--;
+      if (slideIndex < 0) {
+        slideIndex = carouselSlides.length - 1;
+      }
+      showSlide(slideIndex);
+      setActiveIndicator(slideIndex);
+    });
+
+    // Move to the next slide
+    carouselNext.addEventListener('click', () => {
+      slideIndex++;
+      if (slideIndex >= carouselSlides.length) {
+        slideIndex = 0;
+      }
+      showSlide(slideIndex);
+      setActiveIndicator(slideIndex);
+    });
+
+    // Move to the selected slide when an indicator is clicked
+    carouselIndicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        slideIndex = index;
+        showSlide(slideIndex);
+        setActiveIndicator(slideIndex);
+      });
+    });
+
+    // Show the specified slide
+    function showSlide(index) {
+      const numSlides = carouselSlides.length;
+
+      // Adjust the index to wrap around if it goes out of bounds
+      if (index < 0) {
+        index = numSlides - 1;
+      } else if (index >= numSlides) {
+        index = 0;
+      }
+
+      // Set the transform property to move the carousel container
+      carousel.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
+
+      // Update the slideIndex variable
+      slideIndex = index;
+    }
+
+
+    // Set the active indicator
+    function setActiveIndicator(index) {
+      carouselIndicators.forEach((indicator, i) => {
+        if (i === index) {
+          indicator.classList.add('active');
+        } else {
+          indicator.classList.remove('active');
+        }
+      });
+
+      carouselSlides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+    }
+  }
+
+
+</script>
 
 </html>

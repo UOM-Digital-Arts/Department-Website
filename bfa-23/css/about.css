@@ -1,5 +1,6 @@
 body {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
+    overflow-x: hidden;
 }
 
 /* About content */
@@ -64,11 +65,197 @@ body {
     float: right;
 }
 
+.carousel {
+    position: relative;
+
+    /* overflow: hidden; */
+    width: 66%;
+    height: 70vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    margin-bottom: 6vh;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.7s ease-in-out;
+}
+
+.carousel-slide {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.2;
+    background-color: var(--bg);
+    /* padding-left:1em;
+    padding-right:1em; */
+    transition: opacity 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.carousel-slide:hover {
+    opacity: 0.3;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 9999;
+    background-color: var(--bg);
+}
+
+.carousel-slide.active:hover {
+    opacity: 0.9;
+}
+
+.carouselleft {
+    transform: rotate(90deg);
+    width: 1em;
+    z-index: 9999;
+}
+
+.carouselright {
+    transform: rotate(-90deg);
+    width: 1em;
+    z-index: 9999;
+}
+
+.carousel-slide img {
+    cursor: pointer;
+    z-index: -1;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    height: 60vh;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    overflow: visible;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #fff;
+    /* width: 1em; */
+    font-size: 2em;
+    /* margin: -1em; */
+    /* height: 100%; */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* z-index: 9999; */
+}
+
+.carousel-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.8em;
+    left: -0.5em;
+}
+
+.carousel-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.8em;
+    right: -0.5em;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.indicator {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.active {
+    z-index: 1;
+    cursor: pointer;
+    background-color: var(--yellow);
+    pointer-events: auto;
+}
+
+#scroll-down {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 2em;
+
+    width: 100%;
+    height: 12vh;
+
+    transition: 0.4s;
+}
+
+#scroll-down:hover {
+    opacity: 0.8;
+}
+
+#scroll-down img {
+    cursor: pointer;
+
+    width: 3.5em;
+    padding: 1em;
+}
+
+#carouselsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+#lightbox {
+    z-index: 8;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 12vh;
+
+    animation: fadeInAnimation ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#lightbox img {
+    height: 100%;
+}
+
 @media screen and (max-aspect-ratio: 1/1) {
     body {
         padding-bottom: 12vh;
     }
-    
+
     #about {
         font-size: 1.2em;
         letter-spacing: 1px;
@@ -84,6 +271,10 @@ body {
         flex-direction: column;
     }
 
+    #scroll-down {
+        display: none;
+    }
+
     .left {
         width: 100%;
         padding-bottom: 1em;
@@ -96,5 +287,117 @@ body {
 
     .right {
         width: 100%;
+    }
+
+    .carousel {
+        position: relative;
+
+        /* overflow: hidden; */
+        width: 100%;
+        height: auto;
+        margin-bottom: 15em;
+    }
+
+    .carousel-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.7s ease-in-out;
+    }
+
+    .carousel-slide {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        opacity: 0.2;
+        background-color: var(--bg);
+        /* padding-left:1em;
+        padding-right:1em; */
+        transition: opacity 0.4s ease-in-out;
+        z-index: 0;
+    }
+
+    .carousel-slide:hover {
+        opacity: 0.3;
+    }
+
+    .carousel-slide.active {
+        opacity: 1;
+        z-index: 9999;
+        background-color: var(--bg);
+    }
+
+    .carousel-slide.active:hover {
+        opacity: 0.9;
+    }
+
+    .carouselleft {
+        transform: rotate(90deg);
+        width: 1em;
+        z-index: 9999;
+    }
+
+    .carouselright {
+        transform: rotate(-90deg);
+        width: 1em;
+        z-index: 9999;
+    }
+
+    .carousel-slide img {
+        cursor: pointer;
+        z-index: -1;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        position: absolute;
+        overflow: visible;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #fff;
+        /* width: 1em; */
+        font-size: 2em;
+        padding: 0.5em;
+        /* margin: -1em; */
+        height: 100%;
+        /* background-color: rgba(0, 0, 0, 0.3); */
+        /* z-index: 9999; */
+    }
+
+    .carousel-prev {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 0;
+        left: 0.2em;
+        bottom: 0;
+    }
+
+    .carousel-next {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 0;
+        right: 0.2em;
+        bottom: 0;
+    }
+
+    .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
+    #lightbox img {
+        width: 100%;
+        object-fit: contain;
     }
 }
